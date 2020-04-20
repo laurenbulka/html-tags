@@ -19,6 +19,83 @@
 		"oF": 0,
 		"oS": 3
 		},
+	"/deploy/img/section1/greece1.png": {
+		"ft": 32768,
+		"iS": 1416647,
+		"oA": 0,
+		"oAP": "/deploy/img/section1/greece1.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/deploy/img/section2/greece2.png": {
+		"ft": 32768,
+		"iS": 729652,
+		"oA": 0,
+		"oAP": "/deploy/img/section2/greece2.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/deploy/img/section3/greece3.png": {
+		"ft": 32768,
+		"iS": 1478999,
+		"oA": 0,
+		"oAP": "/deploy/img/section3/greece3.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/deploy/img/section4/greece4.png": {
+		"ft": 32768,
+		"iS": 911344,
+		"oA": 0,
+		"oAP": "/deploy/img/section4/greece4.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/deploy/img/section4/greece5.png": {
+		"ft": 32768,
+		"iS": 277047,
+		"oA": 0,
+		"oAP": "/deploy/img/section4/greece5.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/deploy/img/section4/greece6.png": {
+		"ft": 32768,
+		"iS": 350205,
+		"oA": 0,
+		"oAP": "/deploy/img/section4/greece6.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/deploy/img/section5/greece7.png": {
+		"ft": 32768,
+		"iS": 210467,
+		"oA": 0,
+		"oAP": "/deploy/img/section5/greece7.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"/deploy/index.html": {
 		"cB": 0,
 		"ft": 8192,
