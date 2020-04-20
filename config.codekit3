@@ -248,6 +248,14 @@
 		"oAP": "/dev/section-4.html",
 		"oF": 1
 		},
+	"/dev/section-5.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/dev/section-5.html",
+		"oF": 1
+		},
 	"/README.md": {
 		"cB": 0,
 		"cS": 0,
