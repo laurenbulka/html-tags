@@ -1,8 +1,22 @@
 /* =============
    Section 5
 ============= */
+
 #section-5{
-    img{
-        width:100%;
+    display:grid;
+    grid-template-columns: auto;
+    grid-template-areas: "section-5";
+     
+   
+    ul{
+        grid-area: section-5;
+        display:grid;
+        row-gap:20px;
+        
+        img{
+          width:100%;
+         }
     }
+  
+
 }

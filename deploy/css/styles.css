@@ -317,6 +317,11 @@ template {
 /* =============
     Base
 ============= */
+ul {
+  padding: 0; }
+  ul li {
+    list-style: none; }
+
 /* =============
     Typography
 ============= */
@@ -347,6 +352,13 @@ textarea {
 /* =============
     Footer
 ============= */
+footer {
+  display: grid;
+  grid-template-columns: 15px auto 50px;
+  grid-template-areas: ". . footer "; }
+  footer #footer-content {
+    grid-area: footer; }
+
 /* =============
    Section 1
 ============= */
@@ -356,7 +368,14 @@ textarea {
 /* =============
     Section 2
 ============= */
-#section-2 img {
+#section-2 #section-2-container {
+  display: grid;
+  grid-template-columns: 15px auto 15px;
+  grid-template-areas: ". section-2 ."; }
+  #section-2 #section-2-container #section-2-content {
+    grid-area: section-2; }
+
+#section-2 aside img {
   width: 100%; }
 
 /* =============
@@ -368,12 +387,35 @@ textarea {
 /* =============
    Section 4
 ============= */
+#section-4 {
+  display: grid;
+  grid-template-columns: 15px auto 15px;
+  grid-template-areas: ". section-4 ."; }
+  #section-4 #section-4-content {
+    grid-area: section-4; }
+
 /* =============
    Section 5
 ============= */
-#section-5 img {
-  width: 100%; }
+#section-5 {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-areas: "section-5"; }
+  #section-5 ul {
+    grid-area: section-5;
+    display: grid;
+    row-gap: 20px; }
+    #section-5 ul img {
+      width: 100%; }
 
 /* =============
    Section 6
 ============= */
+#section-6 {
+  display: grid;
+  grid-template-columns: 15px auto 15px;
+  grid-template-areas: ". section-6 ."; }
+  #section-6 aside img {
+    width: 100%; }
+  #section-6 #section-6-container {
+    grid-area: section-6; }
