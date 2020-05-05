@@ -368,15 +368,23 @@ footer {
 /* =============
     Section 2
 ============= */
-#section-2 #section-2-container {
-  display: grid;
-  grid-template-columns: 15px auto 15px;
-  grid-template-areas: ". section-2 ."; }
-  #section-2 #section-2-container #section-2-content {
-    grid-area: section-2; }
-
-#section-2 aside img {
-  width: 100%; }
+#section-2 {
+  padding-top: 40px;
+  padding-bottom: 40px; }
+  #section-2 #section-2-container {
+    display: grid;
+    grid-template-columns: 15px auto 15px;
+    grid-template-areas: ". section-2 ."; }
+    #section-2 #section-2-container #section-2-content {
+      grid-area: section-2; }
+  @media (min-width: 768px) {
+    #section-2 {
+      display: grid;
+      grid-template-columns: 60% auto;
+      grid-template-areas: "section-2-content section-2-img";
+      text-align: center; } }
+  #section-2 aside img {
+    width: 100%; }
 
 /* =============
    Section 3
@@ -389,11 +397,23 @@ footer {
 ============= */
 #section-4 {
   display: grid;
+  text-align: center;
   grid-template-columns: 15px auto 15px;
-  grid-template-areas: ". section-4 ."; }
+  grid-template-areas: ". section-4 .";
+  padding-top: 25px;
+  padding-bottom: 25px; }
   #section-4 #section-4-content {
     grid-area: section-4; }
-
+  @media (min-width: 768px) {
+    #section-4 {
+      display: grid;
+      grid-template-columns: 15% auto 15%;
+      grid-template-areas: ". section-4 ."; } }
+  @media (min-width: 1200px) {
+    #section-4 {
+      display: grid;
+      grid-template-columns: 15% auto 15%;
+      grid-template-areas: ". section-4 ."; } }
 /* =============
    Section 5
 ============= */
@@ -405,6 +425,34 @@ footer {
     grid-area: section-5;
     display: grid;
     row-gap: 20px; }
+    @media (min-width: 768px) {
+      #section-5 ul {
+        grid-template-columns: 50% 50%;
+        grid-template-areas: "g4 g4" "g4 g4" "g5 g6";
+        gap: 20px; }
+        #section-5 ul .big {
+          grid-column: span 2;
+          grid-row: span 2; } }
+    @media (min-width: 992px) {
+      #section-5 ul {
+        grid-template-columns: 25% 25% 25% 25%;
+        grid-template-areas: "g4 g4 g5 g5" "g4 g4 g6 g6";
+        gap: 20px; }
+        #section-5 ul .big {
+          grid-column: span 2;
+          grid-row: span 2; }
+        #section-5 ul .horizontal {
+          grid-column: span 2; } }
+    @media (min-width: 1200px) {
+      #section-5 ul {
+        grid-template-columns: 25% 25% 25% 25%;
+        grid-template-areas: "g4 g4 g5 g5" "g4 g4 g6 g6";
+        gap: 20px; }
+        #section-5 ul .big {
+          grid-column: span 2;
+          grid-row: span 2; }
+        #section-5 ul .horizontal {
+          grid-column: span 2; } }
     #section-5 ul img {
       width: 100%; }
 
@@ -419,3 +467,7 @@ footer {
     width: 100%; }
   #section-6 #section-6-container {
     grid-area: section-6; }
+  @media (min-width: 768px) {
+    #section-6 {
+      grid-template-columns: 35% auto 35%;
+      grid-template-areas: " . section-6 . "; } }

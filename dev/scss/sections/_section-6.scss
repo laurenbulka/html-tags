@@ -2,16 +2,32 @@
    Section 6
 ============= */
 #section-6{
+   display:grid;
+      grid-template-columns: 15px auto 15px;
+      grid-template-areas: ". section-6 .";
    aside{
       img{
       width:100%;
       }
    }  
-   display:grid;
-      grid-template-columns: 15px auto 15px;
-      grid-template-areas: ". section-6 .";
+  
+
       #section-6-container{
-         grid-area: section-6;   
-      }   
-}
+         grid-area: section-6; 
+      } 
+         
+         @include md{
+               grid-template-columns: 35% auto 35%;
+               grid-template-areas: " . section-6 . ";
+            }
+         
+
+
+
+ }
+   
+     
+
+ 
+
  

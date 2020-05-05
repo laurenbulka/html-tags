@@ -6,12 +6,53 @@
     display:grid;
     grid-template-columns: auto;
     grid-template-areas: "section-5";
-     
-   
+    
     ul{
         grid-area: section-5;
         display:grid;
         row-gap:20px;
+        @include md{
+            .big{
+                grid-column: span 2;
+                grid-row: span 2;
+            }
+            grid-template-columns: 50% 50%;
+            grid-template-areas: 
+            "g4 g4"
+            "g4 g4"
+            "g5 g6";
+            gap: 20px;
+        }
+
+        @include lg{
+            .big{
+                grid-column: span 2;
+                grid-row: span 2;
+            }
+            .horizontal{
+                grid-column: span 2;
+            }
+            grid-template-columns: 25% 25% 25% 25%;
+            grid-template-areas: 
+            "g4 g4 g5 g5"
+            "g4 g4 g6 g6";
+            gap: 20px;
+        }
+
+        @include xl{
+            .big{
+                grid-column: span 2;
+                grid-row: span 2;
+            }
+            .horizontal{
+                grid-column: span 2;
+            }
+            grid-template-columns: 25% 25% 25% 25%;
+            grid-template-areas: 
+            "g4 g4 g5 g5"
+            "g4 g4 g6 g6";
+            gap: 20px;
+        }
         
         img{
           width:100%;
