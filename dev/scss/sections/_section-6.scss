@@ -1,33 +1,26 @@
 /* =============
    Section 6
 ============= */
-#section-6{
-   display:grid;
-      grid-template-columns: 15px auto 15px;
-      grid-template-areas: ". section-6 .";
-   aside{
-      img{
-      width:100%;
+#section-6 {
+   display: grid;
+   grid-template-columns: 15px auto 15px;
+   grid-template-areas: ". section-6 .";
+
+   @include xl {
+      grid-template-columns: auto 1200px auto;
+   }
+
+   #section-6-content {
+      grid-area: section-6;
+
+      @include lg {
+         display: grid;
+         grid-template-columns: 30% auto;
       }
-   }  
-  
 
-      #section-6-container{
-         grid-area: section-6; 
-      } 
-         
-         @include md{
-               grid-template-columns: 35% auto 35%;
-               grid-template-areas: " . section-6 . ";
-            }
-         
-
-
-
- }
-   
-     
-
- 
-
- 
+      @include md {
+         display: grid;
+         grid-template-columns: 40% auto;
+      }
+   }
+}
