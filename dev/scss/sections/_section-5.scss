@@ -20,7 +20,7 @@
         }
 
         @include lg {
-            grid-template-columns: 25% 25% 25% 25%;
+            grid-template-columns: 50% 50%;
             grid-template-areas:
                 "g4 g5"
                 "g4 g6";
@@ -36,25 +36,24 @@
             }
         }
 
-        #g1{
+        #g4{
             @include md{
-                grid-area: g1;
+                grid-area: g4;
             }
         }
 
-        #g2{
+        #g5{
             @include md{
-                grid-area: g2;
+                grid-area: g5;
             }
         }
 
-        #g3{
+        #g6{
             @include md{
-                grid-area: g3;
+                grid-area: g6;
             }
         }
     }
-
 
 
 

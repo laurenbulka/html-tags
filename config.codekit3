@@ -115,12 +115,12 @@
 		"sC": 3,
 		"tS": 0
 		},
-	"/design/structure-tags.sketch": {
+	"/design/inClassGreece.sketch": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/design/structure-tags.sketch",
+		"oAP": "/design/inClassGreece.sketch",
 		"oF": 0
 		},
 	"/dev/footer.kit": {
@@ -358,6 +358,16 @@
 		"oS": 0,
 		"sct": 1
 		},
+	"/dev/scss/styles.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/dev/scss/styles-min.css",
+		"oF": 0,
+		"oS": 3
+		},
 	"/dev/scss/styles.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -366,8 +376,8 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 0,
-		"oAP": "/dev/scss/styles.css",
-		"oF": 0,
+		"oAP": "/deploy/css/styles.css",
+		"oF": 2,
 		"oS": 0,
 		"sct": 1
 		},

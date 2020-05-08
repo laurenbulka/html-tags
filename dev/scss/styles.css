@@ -380,7 +380,6 @@ footer {
   grid-template-areas: "section-2-text" "section-2-img"; }
   @media (min-width: 768px) {
     #section-2 #section-2-content {
-      display: grid;
       grid-template-columns: 45% auto;
       grid-template-areas: "section-2-img section-2-text"; } }
   @media (min-width: 1200px) {
