@@ -12,51 +12,83 @@
     #section-5-content {
         display: grid;
         gap: 20px;
+        grid-area: section-5;
+        grid-template-rows: repeat(3, 380px);
+        background-size: cover;
+        background-position: center;
 
-        @include md {
-            grid-template-areas:
-                "g4 g4"
-                "g5 g6";
-        }
 
-        @include lg {
-            grid-template-columns: 50% 50%;
-            grid-template-areas:
-                "g4 g5"
-                "g4 g6";
-        }
+                @include md {
+                    display: grid;
+                    gap:20px;
+                    grid-template-columns: 50% auto;
+                    grid-template-rows: repeat(3, 345px);
+                    grid-template-areas:
+                        "g4 g4"
+                        "g4 g4"
+                        "g5 g6";
+                }
 
-        @include xl {
-            grid-area: section-5;
-        }
+                @include lg {
+                    grid-template-columns: 60% auto;
+                    grid-template-areas:
+                        "g4 g5"
+                        "g4 g6";
+                }
 
-        li {
-            img {
-                width: 100%;
+                @include xl {
+                    grid-area: section-5;
+                }
+
+                #g4 {
+                    background-image: url("../img/section4/greece4.png");
+                    background-size: cover;
+                    background-position: 0 -30px;
+                    height: 380px;
+                    @include md {
+                        grid-area: g4;
+                        background-position: 0 -70px;
+                        height: 700px;
+                    }
+                    @include lg {
+                        grid-area: g4;
+                        background-position:0 -20px;
+                        height: 700px;
+                    }
+                    
+                }
+
+                #g5 {
+                    background-image: url("../img/section4/greece5.png");
+                    background-size: cover;
+                    background-position: center;
+                    height: 380px;
+                    @include md {
+                        grid-area: g5;
+                        background-position: center;
+                        height: 340px;
+                    }
+                    @include lg {
+                        grid-area: g5;
+                        background-position:center;
+                        height: 340px;
+                    }
+                }
+
+                #g6 {
+                    background-image: url("../img/section4/greece6.png");
+                    background-size: cover;
+                    background-position: center;
+                    height: 380px;
+                    @include md {
+                        grid-area: g6;
+                        height: 340px;
+                    }
+                    @include lg {
+                        grid-area: g6;
+                        background-position:center;
+                        height: 340px;
+                    }
+                }
             }
         }
-
-        #g4{
-            @include md{
-                grid-area: g4;
-            }
-        }
-
-        #g5{
-            @include md{
-                grid-area: g5;
-            }
-        }
-
-        #g6{
-            @include md{
-                grid-area: g6;
-            }
-        }
-    }
-
-
-
-
-
-}

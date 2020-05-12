@@ -363,9 +363,23 @@ footer {
 /* =============
    Section 1
 ============= */
-#section-1 img {
-  width: 100%; }
-
+#section-1 {
+  background-image: url(../img/section1/greece1.jpg);
+  background-size: 200%;
+  background-position: center;
+  height: 62vh; }
+  @media (min-width: 768px) {
+    #section-1 {
+      background-size: 100%;
+      height: 50vh; } }
+  @media (min-width: 992px) {
+    #section-1 {
+      background-size: 100%;
+      height: 76vh; } }
+  @media (min-width: 1200px) {
+    #section-1 {
+      background-size: 100%;
+      height: 100vh; } }
 /* =============
     Section 2
 ============= */
@@ -400,9 +414,23 @@ footer {
 /* =============
    Section 3
 ============= */
-#section-3 img {
-  width: 100%; }
-
+#section-3 {
+  background-image: url(../img/section3/greece3.png);
+  background-size: cover;
+  background-position: -200px 0;
+  height: 75vh; }
+  @media (min-width: 768px) {
+    #section-3 {
+      background-position: center;
+      height: 50vh; } }
+  @media (min-width: 992px) {
+    #section-3 {
+      background-position: center;
+      height: 76vh; } }
+  @media (min-width: 1200px) {
+    #section-3 {
+      background-position: center;
+      height: 100vh; } }
 /* =============
    Section 4
 ============= */
@@ -435,28 +463,69 @@ footer {
 
 #section-5 #section-5-content {
   display: grid;
-  gap: 20px; }
+  gap: 20px;
+  grid-area: section-5;
+  grid-template-rows: repeat(3, 380px);
+  background-size: cover;
+  background-position: center; }
   @media (min-width: 768px) {
     #section-5 #section-5-content {
-      grid-template-areas: "g4 g4" "g5 g6"; } }
+      display: grid;
+      gap: 20px;
+      grid-template-columns: 50% auto;
+      grid-template-rows: repeat(3, 345px);
+      grid-template-areas: "g4 g4" "g4 g4" "g5 g6"; } }
   @media (min-width: 992px) {
     #section-5 #section-5-content {
-      grid-template-columns: 50% 50%;
+      grid-template-columns: 60% auto;
       grid-template-areas: "g4 g5" "g4 g6"; } }
   @media (min-width: 1200px) {
     #section-5 #section-5-content {
       grid-area: section-5; } }
-  #section-5 #section-5-content li img {
-    width: 100%; }
-  @media (min-width: 768px) {
-    #section-5 #section-5-content #g4 {
-      grid-area: g4; } }
-  @media (min-width: 768px) {
-    #section-5 #section-5-content #g5 {
-      grid-area: g5; } }
-  @media (min-width: 768px) {
-    #section-5 #section-5-content #g6 {
-      grid-area: g6; } }
+  #section-5 #section-5-content #g4 {
+    background-image: url("../img/section4/greece4.png");
+    background-size: cover;
+    background-position: 0 -30px;
+    height: 380px; }
+    @media (min-width: 768px) {
+      #section-5 #section-5-content #g4 {
+        grid-area: g4;
+        background-position: 0 -70px;
+        height: 700px; } }
+    @media (min-width: 992px) {
+      #section-5 #section-5-content #g4 {
+        grid-area: g4;
+        background-position: 0 -20px;
+        height: 700px; } }
+  #section-5 #section-5-content #g5 {
+    background-image: url("../img/section4/greece5.png");
+    background-size: cover;
+    background-position: center;
+    height: 380px; }
+    @media (min-width: 768px) {
+      #section-5 #section-5-content #g5 {
+        grid-area: g5;
+        background-position: center;
+        height: 340px; } }
+    @media (min-width: 992px) {
+      #section-5 #section-5-content #g5 {
+        grid-area: g5;
+        background-position: center;
+        height: 340px; } }
+  #section-5 #section-5-content #g6 {
+    background-image: url("../img/section4/greece6.png");
+    background-size: cover;
+    background-position: center;
+    height: 380px; }
+    @media (min-width: 768px) {
+      #section-5 #section-5-content #g6 {
+        grid-area: g6;
+        height: 340px; } }
+    @media (min-width: 992px) {
+      #section-5 #section-5-content #g6 {
+        grid-area: g6;
+        background-position: center;
+        height: 340px; } }
 /* =============
    Section 6
 ============= */

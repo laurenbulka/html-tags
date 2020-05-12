@@ -19,6 +19,17 @@
 		"oF": 0,
 		"oS": 3
 		},
+	"/deploy/img/section1/greece1.jpg": {
+		"ft": 16384,
+		"iS": 190812,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/section1/greece1.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"/deploy/img/section1/greece1.png": {
 		"ft": 32768,
 		"iS": 1416647,
@@ -364,8 +375,8 @@
 		"ft": 16,
 		"ma": 0,
 		"oA": 0,
-		"oAP": "/dev/scss/styles-min.css",
-		"oF": 0,
+		"oAP": "/deploy/css/styles.css",
+		"oF": 2,
 		"oS": 3
 		},
 	"/dev/scss/styles.scss": {

@@ -1,8 +1,24 @@
 /* =============
    Section 1
 ============= */
-#section-1{
-    img{
-        width:100%;
+#section-1 {
+    background-image: url(../img/section1/greece1.jpg);
+    background-size: 200%;
+    background-position: center;
+    height: 62vh;
+
+    @include md {
+        background-size: 100%;
+        height: 50vh;
+    }
+
+    @include lg {
+        background-size: 100%;
+        height: 76vh;
+    }
+
+    @include xl {
+        background-size: 100%;
+        height: 100vh;
     }
 }
