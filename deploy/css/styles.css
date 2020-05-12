@@ -354,6 +354,13 @@ textarea {
 /* =============
     Header
 ============= */
+header {
+  background-color: #0D9FBF;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%; }
+
 /* =============
     Footer
 ============= */
@@ -363,8 +370,11 @@ footer {
   background-color: #0D9FBF;
   color: white;
   display: grid;
-  grid-template-columns: 15px auto 50px;
-  grid-template-areas: ". . footer "; }
+  background-image: url("../img/footer/greecelogo.png");
+  background-size: cover;
+  background-size: 40px;
+  background-position: center;
+  background-repeat: no-repeat; }
   footer #footer-content {
     grid-area: footer;
     display: flex;
@@ -372,7 +382,17 @@ footer {
     justify-content: flex-end;
     justify-content: space-between;
     align-items: flex-end; }
-
+    footer #footer-content h5 {
+      padding: 0px 0px 0px 300px; }
+      @media (min-width: 768px) {
+        footer #footer-content h5 {
+          padding: 0px 0px 0px 700px; } }
+      @media (min-width: 992px) {
+        footer #footer-content h5 {
+          padding: 0px 0px 0px 1200px; } }
+      @media (min-width: 1200px) {
+        footer #footer-content h5 {
+          padding: 0px 0px 0px 1200px; } }
 /* =============
    Section 1
 ============= */
