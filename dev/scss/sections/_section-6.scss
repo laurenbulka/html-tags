@@ -7,6 +7,15 @@
    grid-template-areas: ". section-6 .";
    padding: 20px 0;
    text-align: justify;
+   align-content: center;
+
+   p{
+         font-family: 'Raleway', sans-serif;
+         font-weight: 500;
+         font-size: 1.5em;
+         line-height: 1.4em;
+         padding: 0px 10px;
+   }
 
    @include xl {
       grid-template-columns: auto 1200px auto;
@@ -28,13 +37,30 @@
          text-align: justify;
       }
 
-      #section-6-text {
+      #section-6-img{
+         display: grid;
+         grid-template-columns: 15px auto 15px;
+         padding: 20px 30px;
+         align-content: center;
+
          @include md {
-            padding: 100px 100px 40px 0px;
+            padding: 30px 20px 40px 0px;
+         }
+         @include lg {
+            padding: 30px 10px 40px 0px;
+         }
+      }
+
+
+
+      #section-6-text {
+         text-align: justify;
+         @include md {
+            padding: 100px 30px 40px 70px;
          }
 
          @include lg {
-            padding: 100px 100px 40px 0px;
+            padding: 120px 30px 30px 10px;
          }
       }
    }
