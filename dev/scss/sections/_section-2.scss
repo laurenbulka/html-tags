@@ -2,8 +2,8 @@
     Section 2
 ============= */
 #section-2 {
-  
-    @include xl{
+
+    @include xl {
         display: grid;
         grid-template-columns: auto 1200px auto;
         grid-template-areas: ". section-2 .";
@@ -16,6 +16,7 @@
             "section-2-img";
 
         @include md {
+            display: grid;
             grid-template-columns: 45% auto;
             grid-template-areas: "section-2-img section-2-text";
         }
@@ -26,16 +27,26 @@
 
         aside {
             grid-area: section-2-img;
+            padding: 0 0 40px 0;
+
             img {
                 width: 100%;
+            }
+
+            @include md {
+                padding: 40px 0px;
             }
         }
 
         #section-2-right {
+            text-align: center;
+            padding: 40px;
             display: grid;
-            grid-template-columns: 15px auto 15px;
-            grid-template-areas: ". section-2-img .";
             grid-area: section-2-text;
+
+            @include md {
+                padding: 120px 10px;
+            }
 
             #section-2-right-content {
                 grid-area: section-2-content;

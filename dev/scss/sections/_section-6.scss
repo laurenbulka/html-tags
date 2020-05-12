@@ -5,6 +5,8 @@
    display: grid;
    grid-template-columns: 15px auto 15px;
    grid-template-areas: ". section-6 .";
+   padding: 20px 0;
+   text-align: justify;
 
    @include xl {
       grid-template-columns: auto 1200px auto;
@@ -16,11 +18,24 @@
       @include lg {
          display: grid;
          grid-template-columns: 30% auto;
+         text-align: justify;
+
       }
 
       @include md {
          display: grid;
          grid-template-columns: 40% auto;
+         text-align: justify;
+      }
+
+      #section-6-text {
+         @include md {
+            padding: 100px 100px 40px 0px;
+         }
+
+         @include lg {
+            padding: 100px 100px 40px 0px;
+         }
       }
    }
 }
