@@ -354,11 +354,20 @@ textarea {
     Footer
 ============= */
 footer {
+  padding: 5px;
+  height: 50px;
+  background-color: #0D9FBF;
+  color: white;
   display: grid;
   grid-template-columns: 15px auto 50px;
   grid-template-areas: ". . footer "; }
   footer #footer-content {
-    grid-area: footer; }
+    grid-area: footer;
+    display: flex;
+    height: 100%;
+    justify-content: flex-end;
+    justify-content: space-between;
+    align-items: flex-end; }
 
 /* =============
    Section 1
@@ -367,7 +376,8 @@ footer {
   background-image: url(../img/section1/greece1.jpg);
   background-size: 200%;
   background-position: center;
-  height: 62vh; }
+  height: 62vh;
+  color: white; }
   @media (min-width: 768px) {
     #section-1 {
       background-size: 100%;
@@ -413,6 +423,10 @@ footer {
     padding: 40px;
     display: grid;
     grid-area: section-2-text; }
+    #section-2 #section-2-content #section-2-right hr {
+      border: none;
+      background-color: #0D9FBF;
+      height: 6px; }
     @media (min-width: 768px) {
       #section-2 #section-2-content #section-2-right {
         padding: 120px 10px; } }
@@ -447,9 +461,14 @@ footer {
   text-align: center;
   grid-template-columns: 15px auto 15px;
   grid-template-areas: ". section-4 .";
-  padding: 30px 15px; }
+  padding: 30px 15px;
+  color: #0D9FBF; }
   #section-4 #section-4-content {
     grid-area: section-4; }
+    #section-4 #section-4-content hr {
+      border: none;
+      background-color: black;
+      height: 3px; }
   @media (min-width: 768px) {
     #section-4 {
       padding: 40px;

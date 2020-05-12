@@ -8,8 +8,14 @@
    grid-template-columns: 15px auto 15px;
    grid-template-areas: ". section-4 .";
    padding: 30px 15px;
+   color: $teal;
 
    #section-4-content {
+      hr{
+         border: none;
+         background-color: black;
+         height: 3px;
+     }
       grid-area: section-4;
    }
 

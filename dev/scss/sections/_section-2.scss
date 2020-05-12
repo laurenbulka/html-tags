@@ -44,6 +44,13 @@
             display: grid;
             grid-area: section-2-text;
 
+            hr{
+                border: none;
+                background-color: $teal;
+                height: 6px;
+            }
+
+
             @include md {
                 padding: 120px 10px;
             }
