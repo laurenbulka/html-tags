@@ -329,6 +329,9 @@ ul {
 body {
   font-family: 'Raleway', sans-serif;
   font-family: 'Playfair Display', serif; }
+  body h1, body h2, body h3, body h4, body h5 {
+    margin: 0;
+    padding: 0; }
 
 /* =============
     Buttons
@@ -351,16 +354,70 @@ textarea {
 /* =============
     Navigation
 ============= */
+#nav-container ul {
+  height: 100%;
+  text-align: right; }
+  @media (min-width: 992px) {
+    #nav-container ul {
+      display: flex;
+      justify-content: flex-end; } }
+  #nav-container ul li {
+    margin-bottom: 20px; }
+    @media (min-width: 992px) {
+      #nav-container ul li {
+        align-items: center;
+        display: flex;
+        margin: 0px 30px 0 0; } }
+    #nav-container ul li a:link,
+    #nav-container ul li a:visited {
+      color: #0D9FBF;
+      text-decoration: none;
+      transition: 0.25s;
+      font-family: 'Raleway', sans-serif; }
+    #nav-container ul li a:hover,
+    #nav-container ul li a:active {
+      color: #000; }
+
 /* =============
     Header
 ============= */
 header {
-  background-color: #0D9FBF;
+  background-color: #fff;
   left: 0;
   position: fixed;
   top: 0;
   width: 100%; }
-
+  header > div {
+    display: grid;
+    grid-template-areas: "logo burger" "nav nav";
+    grid-template-columns: 80% auto; }
+    @media (min-width: 992px) {
+      header > div {
+        grid-template-areas: "logo nav";
+        grid-template-columns: 20% auto; } }
+    header > div #logo-container {
+      grid-area: logo;
+      padding: 20px; }
+    header > div #burger-container {
+      align-items: center;
+      display: flex;
+      grid-area: burger;
+      justify-content: flex-end;
+      padding: 20px; }
+      @media (min-width: 992px) {
+        header > div #burger-container {
+          display: none !important; } }
+      header > div #burger-container i {
+        cursor: pointer; }
+    header > div #nav-container {
+      background-color: #ECECEC;
+      display: none;
+      grid-area: nav;
+      padding: 20px; }
+      @media (min-width: 992px) {
+        header > div #nav-container {
+          background-color: #fff;
+          display: block !important; } }
 /* =============
     Footer
 ============= */
@@ -370,7 +427,7 @@ footer {
   background-color: #0D9FBF;
   color: white;
   display: grid;
-  background-image: url("../img/footer/greecelogo.png");
+  background-image: url("../img/footer/greecelogocopy.png");
   background-size: cover;
   background-size: 40px;
   background-position: center;
@@ -398,28 +455,35 @@ footer {
 ============= */
 #section-1 {
   background-image: url(../img/section1/greece1.jpg);
-  background-size: 200%;
+  background-size: cover;
   background-position: center;
   height: 62vh;
-  color: white; }
+  color: white;
+  padding-top: 30px;
+  font-family: 'Raleway', sans-serif; }
   #section-1 h1 {
     font-family: 'Playfair Display', serif;
     font-weight: 900;
     font-size: 4em;
     line-height: 1em;
-    padding: 20px 0px 0px 20px; }
+    padding: 50px 0px 0px 20px; }
   @media (min-width: 768px) {
     #section-1 {
-      background-size: 100%;
-      height: 50vh; } }
+      background-size: cover;
+      height: 50vh;
+      font-size: 1.5em; } }
   @media (min-width: 992px) {
     #section-1 {
-      background-size: 100%;
-      height: 76vh; } }
+      background-size: cover;
+      height: 76vh;
+      font-size: 2em;
+      padding: 40px 0px 0px 20px; } }
   @media (min-width: 1200px) {
     #section-1 {
-      background-size: 100%;
-      height: 100vh; } }
+      background-size: cover;
+      height: 100vh;
+      font-size: 2em;
+      padding: 40px 0px 0px 20px; } }
 /* =============
     Section 2
 ============= */
@@ -650,4 +714,4 @@ footer {
           padding: 100px 30px 40px 70px; } }
       @media (min-width: 992px) {
         #section-6 #section-6-content #section-6-text {
-          padding: 120px 30px 30px 10px; } }
+          padding: 90px 30px 60px 10px; } }

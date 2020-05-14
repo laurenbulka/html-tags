@@ -3,32 +3,40 @@
 ============= */
 #section-1 {
     background-image: url(../img/section1/greece1.jpg);
-    background-size: 200%;
+    background-size: cover;
     background-position: center;
     height: 62vh;
-    color: white;
+    color:white;
+    padding-top: 30px;
 
     h1{
         font-family: 'Playfair Display', serif;
         font-weight: 900;
         font-size: 4em;
         line-height: 1em;
-        padding: 20px 0px 0px 20px;
+        padding: 50px 0px 0px 20px;
     }
+
+    font-family: 'Raleway', sans-serif;
 
 
     @include md {
-        background-size: 100%;
+        background-size: cover;
         height: 50vh;
+        font-size: 1.5em;
     }
 
     @include lg {
-        background-size: 100%;
+        background-size: cover;
         height: 76vh;
+        font-size: 2em;
+        padding: 40px 0px 0px 20px;
     }
 
     @include xl {
-        background-size: 100%;
+        background-size: cover;
         height: 100vh;
+        font-size: 2em;
+        padding: 40px 0px 0px 20px;
     }
 }

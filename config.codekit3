@@ -21,12 +21,23 @@
 		},
 	"/deploy/img/footer/greecelogo.png": {
 		"ft": 32768,
-		"iS": 5939,
+		"iS": 376,
 		"oA": 0,
 		"oAP": "/deploy/img/footer/greecelogo.png",
 		"oF": 0,
-		"oIPL": 1,
-		"opt": 1,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/deploy/img/footer/greecelogocopy.png": {
+		"ft": 32768,
+		"iS": 344,
+		"oA": 0,
+		"oAP": "/deploy/img/footer/greecelogocopy.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
 		"oT": 1,
 		"q": 100
 		},
@@ -169,14 +180,25 @@
 		"oAP": "/deploy/index.html",
 		"oF": 3
 		},
+	"/dev/js/scripts-min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/dev/js/scripts-min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
 	"/dev/js/scripts.js": {
 		"bF": 0,
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
 		"oA": 0,
-		"oAP": "/dev/js/scripts-min.js",
-		"oF": 0,
+		"oAP": "/deploy/js/scripts-min.js",
+		"oF": 2,
 		"sC": 3,
 		"tS": 0
 		},
